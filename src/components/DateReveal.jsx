@@ -23,6 +23,7 @@ const DateReveal = ({ language }) => {
                     <div className="font-serif text-5xl md:text-7xl font-bold text-teatro-warm gold-gradient-text py-2">
                         March 27
                     </div>
+                     <p className="font-sans text-xl md:text-2xl tracking-[0.2em] text-teatro-warm/60">8:30 PM ONWARDS</p>
                     <p className="font-sans text-xl md:text-2xl tracking-[0.2em] text-teatro-warm/60">2026</p>
                 </div>
             </div>

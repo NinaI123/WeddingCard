@@ -12,7 +12,7 @@ const CountdownTimer = ({ language }) => {
     const t = translations[language].countdown;
 
     useEffect(() => {
-        const targetDate = new Date('2026-03-27T14:00:00').getTime();
+        const targetDate = new Date('2026-03-27T11:00:00').getTime();
 
         const interval = setInterval(() => {
             const now = new Date().getTime();
