@@ -37,7 +37,7 @@ const HeroSection = ({ language }) => {
                 <div className="space-y-6 pt-4">
                     {/* ... Names ... */}
                     <div className="font-serif text-5xl md:text-7xl lg:text-8xl text-teatro-gold gold-gradient-text transform hover:scale-105 transition-transform duration-700 cursor-default">
-                        Samrah Fatima
+                        Samra Fatima
                     </div>
                     {/* Daughter of */}
                     <div className="font-sans text-teatro-warm uppercase tracking-[0.2em] text-xs md:text-sm">
