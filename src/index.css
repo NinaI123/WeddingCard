@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  /* Soft Theme Palette */
+  --color-teatro-dark: #F5EFE6;
+  /* Main Background (Cream) */
+  --color-teatro-primary: #FFFFFF;
+  /* Card Material (White) */
+  --color-teatro-warm: #5A4A3A;
+  /* Text (Dark Brown) */
+  --color-teatro-beige: #8B735B;
+  /* Secondary Text (Medium Brown) */
+  --color-teatro-gold: #C1A37F;
+  /* Accent/Gold (Muted Tan) */
+  --color-teatro-accent: #E4D1BB;
+  /* Secondary Accent (Soft Beige) */
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-arabic: "Amiri", serif;
+
+  --animate-fade-in: fadeIn 1s ease-out forwards;
+  --animate-fade-in-up: fadeInUp 1s ease-out forwards;
+  --animate-pulse-slow: pulse 3s infinite;
+  --animate-curtain-left: curtainLeft 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  --animate-curtain-right: curtainRight 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.gold-gradient-text {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, var(--color-teatro-gold), var(--color-teatro-beige));
+}
+
+.glass-panel {
+  background-color: color-mix(in srgb, var(--color-teatro-primary), transparent 10%);
+  /* More opaque white */
+  backdrop-filter: blur(8px);
+  border: 1px solid color-mix(in srgb, var(--color-teatro-gold), transparent 80%);
+  box-shadow: 0 4px 20px -5px rgb(0 0 0 / 0.05);
+  /* Softer shadow */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes curtainLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes curtainRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
