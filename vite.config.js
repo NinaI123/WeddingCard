@@ -11,15 +11,30 @@
 //   base: '/WeddingCard/',
 // })
 
+// import { defineConfig } from 'vite'
+// import react from '@vitejs/plugin-react'
+// import tailwindcss from 'tailwindcss'
+
+// export default defineConfig({
+//   plugins: [
+//     react(),
+//     tailwindcss(),
+//   ],
+//   base: '/WeddingCard/',
+//   server: {
+//     host: true,
+//   },
+//   preview: {
+//     allowedHosts: ['samrasweddingcard.onrender.com'],
+//     host: true,
+//   },
+// })
+
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from 'tailwindcss'
 
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(),
-  ],
+  plugins: [react()],
   base: '/WeddingCard/',
   server: {
     host: true,
